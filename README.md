@@ -1,5 +1,5 @@
 # osm2citygml
-This tool will take XMLs of buildings from OSM using Overpass and convert it to CityGML format with FME for eventual use with 3DCityDB
+This tool will take XMLs of buildings from OSM using Overpass and convert it to CityGML format with OSM2World and FME for eventual use with 3DCityDB
 
 ![Screenshot](screenshot.png "Screenshot")
 
