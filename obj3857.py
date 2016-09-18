@@ -3,11 +3,12 @@ import sys
 
 input_file=sys.argv[1]
 input_location=sys.argv[2]
+output_file=sys.argv[3]
 
 inProj=Proj(init='epsg:4326')
 outProj=Proj(init='epsg:3857')
 
-output_file = open("3857_"+input_file,"w")
+output_file = open(output_file,"w")
 
 with open(input_location,"r") as location_file:
 	for line in location_file:
