@@ -1,0 +1,1036 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    /opt/fme-desktop-2016/fme /home/fme/Downloads/OSM2World-latest-bin/objrotate.fmw
+#          --SourceDataset_OBJ "/home/fme/Downloads/OSM2World-latest-bin/test.obj"
+#          --FEATURE_TYPES ""
+#          --DestDataset_OBJ ""
+#    
+#    
+#!   REDIRECT_TERMINATORS="NONE"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_SERVER_SERVICES=""
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   REQUIREMENTS=""
+#!   BEGIN_TCL=""
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   IGNORE_READER_FAILURE="No"
+#!   HISTORY=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   FME_DOCUMENT_GUID="cd3a6798-7bbc-11e6-b351-0800274dd6ea"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   DESTINATION="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   MAX_LOG_FEATURES="200"
+#!   LEGAL_TERMS_CONDITIONS=""
+#!   LOG_FILE=""
+#!   DESCRIPTION=""
+#!   CATEGORY=""
+#!   USAGE=""
+#!   FME_DOCUMENT_PRIORGUID="63b742e6-7bb2-11e6-a284-0800274dd6ea,0f6c0680-7bb3-11e6-a284-0800274dd6ea"
+#!   BEGIN_PYTHON=""
+#!   SHOW_ANNOTATIONS="true"
+#!   END_TCL=""
+#!   ZOOM_SCALE="100"
+#!   FME_BUILD_NUM="16609"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   LAST_SAVE_DATE="2016-09-15T22:22:54"
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   PYTHON_COMPATIBILITY="27"
+#!   VIEW_POSITION="108.001 99.001"
+#!   TERMINATE_REJECTED="YES"
+#!   DOC_TOP_LEFT="0.99901 -181.002"
+#!   DESTINATION_ROUTING_FILE=""
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   WORKSPACE_VERSION="1"
+#!   DOC_EXTENTS="1275.11 154.002"
+#!   LAST_SAVE_BUILD="FME(R) 2016.1.1.0 (20160722 - Build 16609 - linux-x64)"
+#!   PASSWORD=""
+#!   SOURCE="NONE"
+#!   END_PYTHON=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   TITLE=""
+#!   SHOW_INFO_NODES="true"
+#!   REQUIREMENTS_KEYWORD=""
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="OBJ"
+#!   DATASET="$(SourceDataset_OBJ)"
+#!   KEYWORD="OBJ_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="false"
+#!   EXPOSABLE_ATTRS="fme_primary_axis string multi_reader_type string fme_rotation string multi_reader_full_id string fme_type string fme_start_angle string fme_sweep_angle string fme_dataset string fme_secondary_axis string fme_feature_type string obj_type string fme_basename string fme_text_string string fme_geometry fme_char(50) multi_reader_keyword string fme_text_size string fme_fill_color string fme_color string multi_reader_id string"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   GENERATE_FME_BUILD_NUM="16609"
+#!   FEATURE_TYPES="$(FEATURE_TYPES)"
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   START_FEATURE=""
+#!   MIN_FEATURES=""
+#!   COORDSYS=""
+#!   MAX_FEATURES=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the OBJ file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="obj file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="OBJ_IN_SEARCH_ENVELOPE_MINX OBJ_IN_SEARCH_ENVELOPE_MINY OBJ_IN_SEARCH_ENVELOPE_MAXX OBJ_IN_SEARCH_ENVELOPE_MAXY OBJ_IN_CLIP_TO_ENVELOPE SEARCH_ENVELOPE_COORDINATE_SYSTEM OBJ_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="OBJ File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the OBJ file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="OBJ"
+#!   DATASET="$(DestDataset_OBJ)"
+#!   KEYWORD="OBJ_2"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="200"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="false"
+#!   EXPOSABLE_ATTRS="fme_geometry fme_char(50) fme_rotation string fme_start_angle string fme_sweep_angle string obj_type string fme_fill_color string fme_color string fme_secondary_axis string fme_primary_axis string fme_type string fme_feature_type string fme_basename string fme_text_string string fme_text_size string fme_dataset string"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   GENERATE_FME_BUILD_NUM="16609"
+#!   FANOUT_GROUP="NO"
+#!   FANOUT_EXPRESSION=""
+#!   COORDSYS=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="File1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the OBJ file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="obj file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="OBJ_OUT_WRITE_FME_VERSION"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="OBJ File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the OBJ file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="OBJ"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="OBJ"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_line"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_collection"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_line"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="OBJ"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="obj_face"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="OBJ"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="test"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="7"
+#!   FEAT_GEOMTYPE="obj_point obj_line obj_face obj_collection"
+#!   POSITION="0.99901 -130.999"
+#!   BOUNDING_RECT="0.99901 -130.999 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OBJ_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="false"
+#!   DYNAMIC_SCHEMA="true"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="string"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="test"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="8"
+#!   FEAT_GEOMTYPE="obj_point"
+#!   POSITION="1224 -130.999"
+#!   BOUNDING_RECT="1224 -130.999 -1 -1"
+#!   ORDER="5e+14"
+#!   COLLAPSED="true"
+#!   KEYWORD="OBJ_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_OBJ OBJ_Files(*.obj)|*.obj|All_Files(*)|* Source Wavefront OBJ File:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)test.obj"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES &lt;solidus&gt;home&lt;solidus&gt;fme&lt;solidus&gt;Downloads&lt;solidus&gt;OSM2World-latest-bin&lt;solidus&gt;test.obj,_FORMAT_OVERRIDE_,OBJ,_DATASET_OVERRIDE_,SourceDataset_OBJ,MERGE_MESH_PARTS,No,MOVE_TO_WORLD_COORDSYS,No,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,VARIABLE_FEATURE_TYPES,yes,_MERGE_SCHEMAS,YES,USE_SEARCH_ENVELOPE,NO,DYNAMIC_WORKFLOW,yes,_MERGE_SCHEMAS,YES Feature Types to Read:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME DestDataset_OBJ Destination Wavefront OBJ Folder:"
+#!   DEFAULT_VALUE=""
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#!   IDENTIFIER="4"
+#!   COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Reader Feature Types&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="97 -27"
+#!   TOP_LEFT="97 -27"
+#!   BOTTOM_RIGHT="96 -26"
+#!   BOUNDING_RECT="97 -27 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="10"
+#!   COMMENT_TYPE="SOURCE_HEADER"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="5"
+#!   COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Data Flow&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="781.804 -27"
+#!   TOP_LEFT="781.804 -27"
+#!   BOTTOM_RIGHT="780.804 -26"
+#!   BOUNDING_RECT="781.804 -27 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="10"
+#!   COMMENT_TYPE="DATAFLOW_HEADER"
+#!   ANCHORED_NODE="0"
+#! />
+#! <COMMENT
+#!   IDENTIFIER="6"
+#!   COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Writer Feature Types&lt;/body&gt;&lt;/html&gt;"
+#!   POSITION="1276.11 -27"
+#!   TOP_LEFT="1276.11 -27"
+#!   BOTTOM_RIGHT="1275.11 -26"
+#!   BOUNDING_RECT="1276.11 -27 -1 -1"
+#!   ORDER="5e+14"
+#!   FOLLOW_ANCHOR="true"
+#!   INFO_NODE="false"
+#!   COLOUR="1,1,0.784314,0.192157"
+#!   SIZE_POLICY="10"
+#!   COMMENT_TYPE="DEST_HEADER"
+#!   ANCHORED_NODE="0"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="3DRotator"
+#!   VERSION="0"
+#!   POSITION="670.006 -181.002"
+#!   BOUNDING_RECT="670.006 -181.002 -1 -1"
+#!   ORDER="5e+14"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="16609"
+#! >
+#!     <OUTPUT_FEAT NAME="ROTATED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="XORIG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CUSTOM_AXIS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="YDIR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="AXIS_CHOICE" PARM_VALUE="X Axis"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ANGLE" PARM_VALUE="90"/>
+#!     <XFORM_PARM PARM_NAME="ZORIG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="ZDIR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="YORIG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XDIR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="3DRotator"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="11"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="8"
+#!   SOURCE_PORT_DESC="fo 0 ROTATED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+FME_PYTHON_VERSION 27
+GUI IGNORE SourceDataset_OBJ_1,OBJ_IN_MERGE_MESH_PARTS_OBJ_1,OBJ_IN_MOVE_TO_WORLD_COORDSYS_OBJ_1,OBJ_IN_SEARCH_ENVELOPE_MINX_OBJ_1,OBJ_IN_SEARCH_ENVELOPE_MINY_OBJ_1,OBJ_IN_SEARCH_ENVELOPE_MAXX_OBJ_1,OBJ_IN_SEARCH_ENVELOPE_MAXY_OBJ_1,OBJ_IN_CLIP_TO_ENVELOPE_OBJ_1,OBJ_IN_NETWORK_AUTHENTICATION_OBJ_1,SEARCH_ENVELOPE_COORDINATE_SYSTEM_OBJ_1,DestDataset_OBJ_2,OBJ_OUT_MOVE_TO_LOCAL_COORDSYS_OBJ_2,OBJ_OUT_REVERSE_FACE_ORDER_OBJ_2,OBJ_OUT_TRIANGULATE_FACES_OBJ_2,OBJ_OUT_WRITE_POINTS_AND_LINES_OBJ_2,OBJ_OUT_MATERIAL_LIB_OBJ_2,OBJ_OUT_MATERIAL_LIB_LINKAGE_OBJ_2,OBJ_OUT_TEXTURE_OUTPUT_FORMAT_OBJ_2,OBJ_OUT_OBJ_WRT_ADV_PARM_GROUP_OBJ_2,OBJ_OUT_WRITE_FME_VERSION_OBJ_2
+DEFAULT_MACRO SourceDataset_OBJ $(FME_MF_DIR)test.obj
+GUI MULTIFILE SourceDataset_OBJ OBJ_Files(*.obj)|*.obj|All_Files(*)|* Source Wavefront OBJ File:
+DEFAULT_MACRO FEATURE_TYPES 
+GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES <solidus>home<solidus>fme<solidus>Downloads<solidus>OSM2World-latest-bin<solidus>test.obj,_FORMAT_OVERRIDE_,OBJ,_DATASET_OVERRIDE_,SourceDataset_OBJ,MERGE_MESH_PARTS,No,MOVE_TO_WORLD_COORDSYS,No,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,VARIABLE_FEATURE_TYPES,yes,_MERGE_SCHEMAS,YES,USE_SEARCH_ENVELOPE,NO,DYNAMIC_WORKFLOW,yes,_MERGE_SCHEMAS,YES Feature Types to Read:
+DEFAULT_MACRO DestDataset_OBJ 
+GUI DIRNAME DestDataset_OBJ Destination Wavefront OBJ Folder:
+INCLUDE [ if {{$(SourceDataset_OBJ)} == {}} { puts_real {Parameter 'SourceDataset_OBJ' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_OBJ)} == {}} { puts_real {Parameter 'DestDataset_OBJ' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! WORKSPACE_VERSION 1
+# ============================================================================ 
+# 
+# This mapping file was generated by FME Workbench
+# on 09/15/16 21:06:49 for translation between OBJ and OBJ
+# 
+# This workspace was generated with FME build 16609
+#
+# You may edit this mapping file to customize its operation.  Comments are 
+# placed throughout to assist you. 
+# 
+# Modification History:
+# 
+#     Name              Date     Description
+#     ================= ======== =============================================
+# 
+# 
+# ============================================================================ 
+# ============================================================================ 
+# The following line defines the title presented to the user when this
+# mapping file is run through the FME GUI.  You may modify this
+# if a more meaningful title would be appropriate.
+GUI TITLE OBJ to OBJ Translation 
+# ============================================================================ 
+# The following line names the log file to which useful statistics about
+# the translation will be written.  This line can be uncommented and
+# updated if you do wish to keep these statistics.
+# LOG_FILENAME translation.log
+# LOG_APPEND NO
+# ============================================================================ 
+# The following line instructs the FME to log any features that do not
+# match any of the source feature patterns listed further down in
+# this file.  If you are modifying this mapping file, this will be
+# useful to describe to you exactly which features you are losing
+# during translation, if the statistics indicate that features are
+# not being correlated or grouped.  Uncorrelated features do not
+# match any source specification, ungrouped features do not have
+# any corresponding _DEF line. 
+# FME_DEBUG UNGROUPED UNCORRELATED
+# ============================================================================ 
+# The following two lines define the type of reader and writer to be
+# used for this translation.  If you want to translate your data
+# back into its original format, you may make a copy of this file
+# and switch the reader and writer types.  If you rerun the FME, you
+# will get your original data back again (together with any modifications
+# you made in the meantime).  Note that several formats are NOT
+# bi-directional (for example, GIF can only be used as a WRITER)
+# so a reverse translation may not always be possible.
+#! START_WB_HEADER
+READER_TYPE OBJ
+READER_KEYWORD OBJ_1
+READER_GEN_DIRECTIVES MERGE_MESH_PARTS,No,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXY,0,MOVE_TO_WORLD_COORDSYS,Yes,CLIP_TO_ENVELOPE,NO,VARIABLE_FEATURE_TYPES,yes,_MERGE_SCHEMAS,YES,USE_SEARCH_ENVELOPE,NO,DYNAMIC_WORKFLOW,yes
+
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} OBJ
+MULTI_WRITER_KEYWORD{0} OBJ_2
+#! END_WB_HEADER
+
+#! START_WB_HEADER
+MACRO WB_KEYWORD "OBJ_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER OBJ OBJ_1
+OBJ_1_DYNAMIC_WORKFLOW YES
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_OBJ_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER OBJ OBJ_1
+DEFAULT_MACRO SourceDataset_OBJ_1 $(SourceDataset_OBJ)
+GUI MULTIFILE SourceDataset_OBJ_1 OBJ_Files(*.obj)|*.obj|All_Files(*)|* Source Wavefront OBJ File:
+DEFAULT_MACRO OBJ_IN_VARIABLE_FEATURE_TYPES_OBJ_1 yes
+OBJ_1_VARIABLE_FEATURE_TYPES "$(OBJ_IN_VARIABLE_FEATURE_TYPES_OBJ_1)"
+DEFAULT_MACRO OBJ_IN_MERGE_MESH_PARTS_OBJ_1 No
+OBJ_1_MERGE_MESH_PARTS "$(OBJ_IN_MERGE_MESH_PARTS_OBJ_1)"
+GUI CHOICE OBJ_IN_MERGE_MESH_PARTS_OBJ_1 Yes%No Merge Mesh Parts:
+DEFAULT_MACRO OBJ_IN_MOVE_TO_WORLD_COORDSYS_OBJ_1 No
+OBJ_1_MOVE_TO_WORLD_COORDSYS "$(OBJ_IN_MOVE_TO_WORLD_COORDSYS_OBJ_1)"
+GUI CHOICE OBJ_IN_MOVE_TO_WORLD_COORDSYS_OBJ_1 Yes%No Move to World Coordinate System:
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO OBJ_IN_SEARCH_ENVELOPE_MINX_OBJ_1 0
+OBJ_1_SEARCH_ENVELOPE "$(OBJ_IN_SEARCH_ENVELOPE_MINX_OBJ_1)"
+GUI OPTIONAL FLOAT OBJ_IN_SEARCH_ENVELOPE_MINX_OBJ_1 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO OBJ_IN_SEARCH_ENVELOPE_MINY_OBJ_1 0
+OBJ_1_SEARCH_ENVELOPE "$(OBJ_IN_SEARCH_ENVELOPE_MINY_OBJ_1)"
+GUI OPTIONAL FLOAT OBJ_IN_SEARCH_ENVELOPE_MINY_OBJ_1 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO OBJ_IN_SEARCH_ENVELOPE_MAXX_OBJ_1 0
+OBJ_1_SEARCH_ENVELOPE "$(OBJ_IN_SEARCH_ENVELOPE_MAXX_OBJ_1)"
+GUI OPTIONAL FLOAT OBJ_IN_SEARCH_ENVELOPE_MAXX_OBJ_1 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO OBJ_IN_SEARCH_ENVELOPE_MAXY_OBJ_1 0
+OBJ_1_SEARCH_ENVELOPE "$(OBJ_IN_SEARCH_ENVELOPE_MAXY_OBJ_1)"
+GUI OPTIONAL FLOAT OBJ_IN_SEARCH_ENVELOPE_MAXY_OBJ_1 Maximum Y:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+DEFAULT_MACRO OBJ_IN_CLIP_TO_ENVELOPE_OBJ_1 NO
+OBJ_1_CLIP_TO_ENVELOPE "$(OBJ_IN_CLIP_TO_ENVELOPE_OBJ_1)"
+GUI OPTIONAL CHECKBOX OBJ_IN_CLIP_TO_ENVELOPE_OBJ_1 YES%NO Clip to Search Envelope
+# ===========================================================================
+DEFAULT_MACRO OBJ_IN_NETWORK_AUTHENTICATION_OBJ_1 
+OBJ_1_NETWORK_AUTHENTICATION "$(OBJ_IN_NETWORK_AUTHENTICATION_OBJ_1)"
+GUI OPTIONAL AUTHENTICATOR OBJ_IN_NETWORK_AUTHENTICATION_OBJ_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ===========================================================================
+DEFAULT_MACRO OBJ_IN_ATTRIBUTE_READING_OBJ_1 ALL
+OBJ_1_ATTRIBUTE_READING "$(OBJ_IN_ATTRIBUTE_READING_OBJ_1)"
+# PR:31021
+# Include this file in workbench source preamble section to enable the ability
+# to specify a coordinate system for search envelope processing
+# ===========================================================================
+DEFAULT_MACRO SEARCH_ENVELOPE_COORDINATE_SYSTEM_OBJ_1 
+GUI OPTIONAL COORDSYS SEARCH_ENVELOPE_COORDINATE_SYSTEM_OBJ_1 Search Envelope Coordinate System:
+OBJ_1_SEARCH_ENVELOPE_COORDINATE_SYSTEM "$(SEARCH_ENVELOPE_COORDINATE_SYSTEM_OBJ_1)"
+# ===========================================================================
+OBJ_1_DATASET "$(SourceDataset_OBJ_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "OBJ_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER OBJ OBJ_2
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_OBJ_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER OBJ OBJ_2
+DEFAULT_MACRO DestDataset_OBJ_2 $(DestDataset_OBJ)
+GUI DIRNAME DestDataset_OBJ_2 Destination Wavefront OBJ Folder:
+DEFAULT_MACRO OBJ_OUT_MOVE_TO_LOCAL_COORDSYS_OBJ_2 No
+OBJ_2_MOVE_TO_LOCAL_COORDSYS "$(OBJ_OUT_MOVE_TO_LOCAL_COORDSYS_OBJ_2)"
+GUI LOOKUP_CHOICE OBJ_OUT_MOVE_TO_LOCAL_COORDSYS_OBJ_2 Yes,Yes%No,No%"Create Projection File Only",PRJ_ONLY%"Transform Coordinates Only",COORDINATES_ONLY Move to Local Coordinate System:
+DEFAULT_MACRO OBJ_OUT_REVERSE_FACE_ORDER_OBJ_2 No
+OBJ_2_REVERSE_FACE_ORDER "$(OBJ_OUT_REVERSE_FACE_ORDER_OBJ_2)"
+GUI CHOICE OBJ_OUT_REVERSE_FACE_ORDER_OBJ_2 Yes%No Reverse Face Order:
+DEFAULT_MACRO OBJ_OUT_TRIANGULATE_FACES_OBJ_2 Yes
+OBJ_2_TRIANGULATE_FACES "$(OBJ_OUT_TRIANGULATE_FACES_OBJ_2)"
+GUI CHOICE OBJ_OUT_TRIANGULATE_FACES_OBJ_2 Yes%No Triangulate Faces:
+DEFAULT_MACRO OBJ_OUT_WRITE_POINTS_AND_LINES_OBJ_2 No
+OBJ_2_WRITE_POINTS_AND_LINES "$(OBJ_OUT_WRITE_POINTS_AND_LINES_OBJ_2)"
+GUI CHOICE OBJ_OUT_WRITE_POINTS_AND_LINES_OBJ_2 Yes%No Write Points and Lines:
+DEFAULT_MACRO OBJ_OUT_MATERIAL_LIB_OBJ_2 
+OBJ_2_MATERIAL_LIB "$(OBJ_OUT_MATERIAL_LIB_OBJ_2)"
+GUI OPTIONAL FILENAME_MUSTEXIST OBJ_OUT_MATERIAL_LIB_OBJ_2 Material_Library_File(*.mtl)|*.mtl|All_files(*)|* Material Library File:
+DEFAULT_MACRO OBJ_OUT_MATERIAL_LIB_LINKAGE_OBJ_2 Relative
+OBJ_2_MATERIAL_LIB_LINKAGE "$(OBJ_OUT_MATERIAL_LIB_LINKAGE_OBJ_2)"
+GUI CHOICE OBJ_OUT_MATERIAL_LIB_LINKAGE_OBJ_2 Relative%Absolute%Copy Material Library Linkage:
+DEFAULT_MACRO OBJ_OUT_TEXTURE_OUTPUT_FORMAT_OBJ_2 NONE
+OBJ_2_TEXTURE_OUTPUT_FORMAT "$(OBJ_OUT_TEXTURE_OUTPUT_FORMAT_OBJ_2)"
+GUI LOOKUP_CHOICE OBJ_OUT_TEXTURE_OUTPUT_FORMAT_OBJ_2 Auto,NONE%PNG,PNGRASTER%JPEG%GIF,GIFRASTER%BMP%XPM%TIFF Preferred Texture Format:
+GUI DISCLOSUREGROUP OBJ_OUT_OBJ_WRT_ADV_PARM_GROUP_OBJ_2 WRITE_FME_VERSION Advanced
+DEFAULT_MACRO OBJ_OUT_WRITE_FME_VERSION_OBJ_2 No
+OBJ_2_WRITE_FME_VERSION "$(OBJ_OUT_WRITE_FME_VERSION_OBJ_2)"
+GUI CHOICE OBJ_OUT_WRITE_FME_VERSION_OBJ_2 Yes%No Write FME Version to OBJ File Header:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO OBJ_OUT_DESTINATION_DATASETTYPE_VALIDATION_OBJ_2 Yes
+OBJ_2_DESTINATION_DATASETTYPE_VALIDATION "$(OBJ_OUT_DESTINATION_DATASETTYPE_VALIDATION_OBJ_2)"
+OBJ_2_DATASET "$(DestDataset_OBJ_2)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)objrotate.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_OBJ_1 OBJ_1
+DEFAULT_MACRO DATASET_KEYWORD_OBJ_2 OBJ_2
+# -------------------------------------------------------------------------
+
+OBJ_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+OBJ_1_FEATURE_TYPES $(FEATURE_TYPES)
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME objrotate
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+OBJ_1_DEF test
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD OBJ_1   INPUT FEATURE_TYPE *    ROUTE OBJ OBJ_1::test TO FME_GENERIC ::test ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+OBJ_1_MERGE_DEF OBJ_1::test GLOB_NOCASE *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "test (OBJ_1) Splitter"    INPUT FEATURE_TYPE test    OUTPUT FEATURE_TYPE test_OBJ_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+INCLUDE [    if { "X" == "X" } {       puts "MACRO XORIG_REAL 0";       puts "MACRO YORIG_REAL 0";       puts "MACRO ZORIG_REAL 0";       puts "MACRO XDIR_REAL 1";       puts "MACRO YDIR_REAL 0";       puts "MACRO ZDIR_REAL 0";    } elseif { "X" == "Y" } {       puts "MACRO XORIG_REAL 0";       puts "MACRO YORIG_REAL 0";       puts "MACRO ZORIG_REAL 0";       puts "MACRO XDIR_REAL 0";       puts "MACRO YDIR_REAL 1";       puts "MACRO ZDIR_REAL 0";    } elseif { "X" == "Z" } {       puts "MACRO XORIG_REAL 0";       puts "MACRO YORIG_REAL 0";       puts "MACRO ZORIG_REAL 0";       puts "MACRO XDIR_REAL 0";       puts "MACRO YDIR_REAL 0";       puts "MACRO ZDIR_REAL 1";    } else {    } ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME 3DRotator    INPUT  FEATURE_TYPE test_OBJ_1    OUTPUT FEATURE_TYPE 3DRotator_ROTATED         @Affine("90","$(XORIG_REAL)","$(YORIG_REAL)","$(ZORIG_REAL)","$(XDIR_REAL)","$(YDIR_REAL)","$(ZDIR_REAL)",ROTATE)
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC 3DRotator_ROTATED TO OBJ __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>test<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+OBJ_2_DEF test

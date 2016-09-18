@@ -11,51 +11,51 @@
 #          --DestDataset_CITYGML "d"
 #    
 #    
-#!   BEGIN_PYTHON=""
-#!   SHOW_INFO_NODES="true"
-#!   TERMINATE_REJECTED="YES"
-#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
-#!   FME_DOCUMENT_GUID="800b7592-79c9-11e6-9836-0800274dd6ea"
-#!   MAX_LOG_FEATURES="200"
-#!   DESTINATION_ROUTING_FILE=""
-#!   ATTR_TYPE_ENCODING="SDF"
-#!   CATEGORY=""
-#!   HISTORY=""
-#!   DOC_TOP_LEFT="97 -156.001"
-#!   DESTINATION="NONE"
-#!   SHOW_ANNOTATIONS="true"
-#!   DESCRIPTION=""
 #!   END_PYTHON=""
-#!   LAST_SAVE_DATE="2016-09-13T10:48:22"
-#!   FME_DOCUMENT_PRIORGUID="6ad5f83c-77c6-11e6-a52c-0800274dd6ea,2e440056-7921-11e6-a93f-0800274dd6ea,94184a40-79c6-11e6-832b-0800274dd6ea"
-#!   WARN_INVALID_XFORM_PARAM="Yes"
-#!   ZOOM_SCALE="100"
-#!   IGNORE_READER_FAILURE="No"
-#!   USAGE=""
-#!   LOG_MAX_RECORDED_FEATURES="200"
-#!   FME_BUILD_NUM="16609"
-#!   BEGIN_TCL=""
-#!   FME_REPROJECTION_ENGINE="FME"
-#!   WORKSPACE_VERSION="1"
-#!   FME_SERVER_SERVICES=""
-#!   PASSWORD=""
-#!   VIEW_POSITION="-3.00003 1545.02"
-#!   SOURCE="NONE"
-#!   LOG_FILE=""
-#!   DOC_EXTENTS="1366.13 129.001"
-#!   REQUIREMENTS=""
-#!   SOURCE_ROUTING_FILE=""
-#!   LEGAL_TERMS_CONDITIONS=""
+#!   DESCRIPTION=""
 #!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
-#!   FME_STROKE_MAX_DEVIATION="0"
-#!   REQUIREMENTS_KEYWORD=""
-#!   LAST_SAVE_BUILD="FME(R) 2016.1.1.0 (20160722 - Build 16609 - linux-x64)"
-#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_DOCUMENT_GUID="c85cb682-7c0b-11e6-b88c-0800274dd6ea"
+#!   FME_DOCUMENT_PRIORGUID="6ad5f83c-77c6-11e6-a52c-0800274dd6ea,2e440056-7921-11e6-a93f-0800274dd6ea,94184a40-79c6-11e6-832b-0800274dd6ea,800b7592-79c9-11e6-9836-0800274dd6ea,e8def2ec-7ab4-11e6-b58c-0800274dd6ea,395cad9c-7ab8-11e6-bcd1-0800274dd6ea,782f85de-7ab9-11e6-839c-0800274dd6ea,8badb740-7abc-11e6-81c0-0800274dd6ea,ff21c912-7ad2-11e6-a683-0800274dd6ea,4b898bc8-7ad3-11e6-a17f-0800274dd6ea,7bc90caa-7ad3-11e6-8bb0-0800274dd6ea,50ae277a-7bab-11e6-b6a2-0800274dd6ea,e71b3d12-7bae-11e6-8637-0800274dd6ea,db9a9f16-7bb1-11e6-a284-0800274dd6ea,3d72a058-7bc1-11e6-b1d7-0800274dd6ea"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
 #!   FME_GEOMETRY_HANDLING="Enhanced"
 #!   PYTHON_COMPATIBILITY="27"
-#!   REDIRECT_TERMINATORS="NONE"
-#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   LOG_FILE=""
+#!   CATEGORY=""
+#!   SHOW_ANNOTATIONS="true"
+#!   DESTINATION_ROUTING_FILE=""
+#!   REQUIREMENTS=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   END_TCL=""
 #!   TITLE=""
+#!   DOC_EXTENTS="1205.98 196.669"
+#!   SOURCE="NONE"
+#!   BEGIN_TCL=""
+#!   LAST_SAVE_DATE="2016-09-16T07:47:52"
+#!   LEGAL_TERMS_CONDITIONS=""
+#!   VIEW_POSITION="-225.002 2076.02"
+#!   REQUIREMENTS_KEYWORD=""
+#!   ZOOM_SCALE="100"
+#!   WORKSPACE_VERSION="1"
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   TERMINATE_REJECTED="YES"
+#!   BEGIN_PYTHON=""
+#!   FME_SERVER_SERVICES=""
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   IGNORE_READER_FAILURE="No"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   HISTORY=""
+#!   MAX_LOG_FEATURES="200"
+#!   SOURCE_ROUTING_FILE=""
+#!   LAST_SAVE_BUILD="FME(R) 2016.1.1.0 (20160722 - Build 16609 - linux-x64)"
+#!   PASSWORD=""
+#!   DOC_TOP_LEFT="97 -223.669"
+#!   FME_BUILD_NUM="16609"
+#!   USAGE=""
+#!   DESTINATION="NONE"
+#!   SHOW_INFO_NODES="true"
 #! >
 #! <DATASETS>
 #! <DATASET
@@ -71,7 +71,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="false"
-#!   EXPOSABLE_ATTRS="fme_secondary_axis string multi_reader_id string fme_text_size string fme_dataset string fme_feature_type string fme_start_angle string multi_reader_type string fme_type string multi_reader_keyword string fme_rotation string fme_color string fme_sweep_angle string fme_basename string obj_type string fme_fill_color string multi_reader_full_id string fme_text_string string fme_geometry fme_char(50) fme_primary_axis string"
+#!   EXPOSABLE_ATTRS="multi_reader_full_id string fme_sweep_angle string fme_rotation string fme_type string fme_text_string string fme_primary_axis string fme_basename string fme_dataset string multi_reader_id string multi_reader_type string multi_reader_keyword string fme_secondary_axis string obj_type string fme_geometry fme_char(50) fme_color string fme_start_angle string fme_text_size string fme_feature_type string fme_fill_color string"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS=""
@@ -81,12 +81,20 @@
 #!   DATASET_TYPE="FILEDIR"
 #!   GENERATE_FME_BUILD_NUM="16609"
 #!   FEATURE_TYPES="$(FEATURE_TYPES)"
-#!   MIN_FEATURES=""
-#!   COORDSYS=""
 #!   START_FEATURE=""
-#!   MAX_FEATURES=""
+#!   MIN_FEATURES=""
 #!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   COORDSYS="EPSG:3857"
+#!   MAX_FEATURES=""
 #! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="OBJ_IN_SEARCH_ENVELOPE_MINX OBJ_IN_SEARCH_ENVELOPE_MINY OBJ_IN_SEARCH_ENVELOPE_MAXX OBJ_IN_SEARCH_ENVELOPE_MAXY OBJ_IN_CLIP_TO_ENVELOPE SEARCH_ENVELOPE_COORDINATE_SYSTEM OBJ_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the OBJ file"
+#! />
 #! <METAFILE_PARAMETER
 #!   NAME="DATASET_NAME"
 #!   VALUE="obj file"
@@ -96,20 +104,12 @@
 #!   VALUE="File1"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="READER_DATASET_HINT"
-#!   VALUE="Select the OBJ file(s)"
-#! />
-#! <METAFILE_PARAMETER
 #!   NAME="FEATURE_TYPE_NAME"
 #!   VALUE="OBJ File"
 #! />
 #! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a folder for the OBJ file"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="ADVANCED_PARMS"
-#!   VALUE="OBJ_IN_SEARCH_ENVELOPE_MINX OBJ_IN_SEARCH_ENVELOPE_MINY OBJ_IN_SEARCH_ENVELOPE_MAXX OBJ_IN_SEARCH_ENVELOPE_MAXY OBJ_IN_CLIP_TO_ENVELOPE SEARCH_ENVELOPE_COORDINATE_SYSTEM OBJ_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM"
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the OBJ file(s)"
 #! />
 #! </DATASET>
 #! <DATASET
@@ -125,7 +125,7 @@
 #!   WRITE_DEFS="true"
 #!   DEFLINE_TEMPLATE=""
 #!   DEFLINE_ATTRS="true"
-#!   EXPOSABLE_ATTRS="citygml_specular_color xml_buffer gml_id xml_buffer citygml_orientation_matrix xml_buffer gml_parent_id xml_buffer fme_type xml_char(50) citygml_is_smooth xml_boolean citygml_lod_name xml_buffer fme_secondary_axis xml_real64 citygml_target{}.coordinate_list{}.coordinates xml_buffer citygml_wrap_mode xml_char(16) citygml_level_of_detail xml_ubyte citygml_target{}.world_to_texture_matrix xml_buffer fme_start_angle xml_real64 citygml_transparency xml_real64 citygml_theme xml_buffer fme_sweep_angle xml_real64 fme_primary_axis xml_real64 citygml_is_front xml_boolean fme_fill_color xml_char(50) fme_text_string xml_char(50) citygml_prefer_world_file xml_boolean fme_text_size xml_real64 citygml_image_uri xml_buffer citygml_texture_type xml_char(16) citygml_ambient_intensity xml_real64 fme_dataset xml_char(50) fme_rotation xml_real64 citygml_emissive_color xml_buffer fme_geometry fme_char(50) citygml_library_object xml_buffer citygml_target xml_buffer citygml_mime_type xml_buffer citygml_shininess xml_real64 citygml_target{}.coordinate_list{}.ring xml_buffer citygml_border_color xml_buffer fme_feature_type xml_char(50) fme_color xml_char(50) citygml_target{}.uri xml_buffer citygml_diffuse_color xml_buffer citygml_transformation_matrix xml_buffer fme_basename xml_char(50)"
+#!   EXPOSABLE_ATTRS="citygml_transformation_matrix xml_buffer fme_fill_color xml_char(50) citygml_target{}.coordinate_list{}.coordinates xml_buffer citygml_is_smooth xml_boolean fme_start_angle xml_real64 citygml_wrap_mode xml_char(16) fme_secondary_axis xml_real64 citygml_target{}.uri xml_buffer citygml_theme xml_buffer fme_sweep_angle xml_real64 citygml_diffuse_color xml_buffer fme_rotation xml_real64 fme_type xml_char(50) citygml_target{}.coordinate_list{}.ring xml_buffer fme_geometry fme_char(50) citygml_level_of_detail xml_ubyte fme_text_string xml_char(50) citygml_texture_type xml_char(16) citygml_emissive_color xml_buffer fme_color xml_char(50) citygml_orientation_matrix xml_buffer fme_primary_axis xml_real64 citygml_library_object xml_buffer fme_text_size xml_real64 citygml_target xml_buffer citygml_ambient_intensity xml_real64 citygml_image_uri xml_buffer fme_feature_type xml_char(50) citygml_border_color xml_buffer fme_basename xml_char(50) citygml_lod_name xml_buffer citygml_target{}.world_to_texture_matrix xml_buffer citygml_specular_color xml_buffer citygml_mime_type xml_buffer fme_dataset xml_char(50) citygml_shininess xml_real64 gml_id xml_buffer citygml_prefer_world_file xml_boolean gml_parent_id xml_buffer citygml_is_front xml_boolean citygml_transparency xml_real64"
 #!   DEFLINE_PARMS=""
 #!   ATTR_INDEX_TYPES=""
 #!   ATTR_NAME_INVALID_CHARS="[]=%~!@$&amp;#[^?*&apos;+()\\/&quot;:"
@@ -136,8 +136,16 @@
 #!   GENERATE_FME_BUILD_NUM="16609"
 #!   FANOUT_EXPRESSION="&lt;Unused&gt;"
 #!   FANOUT_GROUP="NO"
-#!   COORDSYS=""
+#!   COORDSYS="EPSG:3857"
 #! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="TEXTURE_DIRECTORY THEME_NAME"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the CityGML file"
+#! />
 #! <METAFILE_PARAMETER
 #!   NAME="DATASET_NAME"
 #!   VALUE="CityGML file"
@@ -145,14 +153,6 @@
 #! <METAFILE_PARAMETER
 #!   NAME="READER_DATASET_HINT"
 #!   VALUE="Select the CityGML file(s)"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="WRITER_DATASET_HINT"
-#!   VALUE="Specify a name for the CityGML file"
-#! />
-#! <METAFILE_PARAMETER
-#!   NAME="ADVANCED_PARMS"
-#!   VALUE="TEXTURE_DIRECTORY THEME_NAME"
 #! />
 #! </DATASET>
 #! </DATASETS>
@@ -685,10 +685,10 @@
 #!   IS_EDITABLE="false"
 #!   IDENTIFIER="2"
 #!   FEAT_GEOMTYPE="All"
-#!   POSITION="1411.02 -156.001"
-#!   BOUNDING_RECT="1411.02 -156.001 -1 -1"
+#!   POSITION="1302.98 -223.669"
+#!   BOUNDING_RECT="1302.98 -223.669 -1 -1"
 #!   ORDER="5e+14"
-#!   COLLAPSED="true"
+#!   COLLAPSED="false"
 #!   KEYWORD="CITYGML_1"
 #!   PARMS_EDITED="true"
 #!   ENABLED="true"
@@ -730,7 +730,7 @@
 #!   IS_STAND_ALONE="false"
 #! />
 #! <GLOBAL_PARAMETER
-#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES &quot;d,_FORMAT_OVERRIDE_,OBJ,_DATASET_OVERRIDE_,SourceDataset_OBJ,MERGE_MESH_PARTS,No,MOVE_TO_WORLD_COORDSYS,No,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,NETWORK_AUTHENTICATION,\&quot;AUTH_INFO_GROUP,NO,AUTH_METHOD,&lt;lt&gt;Unused&lt;gt&gt;,NAMED_CONNECTION,&lt;lt&gt;Unused&lt;gt&gt;,AUTH_USERNAME,&lt;lt&gt;Unused&lt;gt&gt;,AUTH_PASSWORD,&lt;Unused&gt;\&quot;,VARIABLE_FEATURE_TYPES,yes,USE_SEARCH_ENVELOPE,NO,SourceDataset,/home/fme/Downloads/OSM2World-latest-bin/137339375.obj,FME_GEOMETRY_HANDLING,Enhanced,_MERGE_SCHEMAS,YES&quot; Feature Types to Read:"
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES &quot;d,_FORMAT_OVERRIDE_,OBJ,_DATASET_OVERRIDE_,SourceDataset_OBJ,MERGE_MESH_PARTS,No,MOVE_TO_WORLD_COORDSYS,No,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,NETWORK_AUTHENTICATION,\&quot;AUTH_INFO_GROUP,NO,AUTH_METHOD,&lt;lt&gt;Unused&lt;gt&gt;,NAMED_CONNECTION,&lt;lt&gt;Unused&lt;gt&gt;,AUTH_USERNAME,&lt;lt&gt;Unused&lt;gt&gt;,AUTH_PASSWORD,&lt;Unused&gt;\&quot;,COORDSYS,EPSG:3857,VARIABLE_FEATURE_TYPES,yes,USE_SEARCH_ENVELOPE,NO,SourceDataset,/home/fme/Downloads/OSM2World-latest-bin/137339375.obj,FME_GEOMETRY_HANDLING,Enhanced,_MERGE_SCHEMAS,YES&quot; Feature Types to Read:"
 #!   DEFAULT_VALUE=""
 #!   IS_STAND_ALONE="false"
 #! />
@@ -774,10 +774,10 @@
 #! <COMMENT
 #!   IDENTIFIER="6"
 #!   COMMENT_VALUE="&lt;html&gt;&lt;body&gt;Writer Feature Types&lt;/body&gt;&lt;/html&gt;"
-#!   POSITION="1463.13 -27"
-#!   TOP_LEFT="1463.13 -27"
-#!   BOTTOM_RIGHT="1462.13 -26"
-#!   BOUNDING_RECT="1463.13 -27 -1 -1"
+#!   POSITION="1289.09 -27"
+#!   TOP_LEFT="1289.09 -27"
+#!   BOTTOM_RIGHT="1288.09 -26"
+#!   BOUNDING_RECT="1289.09 -27 -1 -1"
 #!   ORDER="5e+14"
 #!   FOLLOW_ANCHOR="true"
 #!   INFO_NODE="false"
@@ -807,23 +807,23 @@
 #!     <FEAT_COLLAPSED COLLAPSED="0"/>
 #!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
 #!     <XFORM_ATTR ATTR_NAME="_geometry_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
-#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Flatten All Levels"/>
-#!     <XFORM_PARM PARM_NAME="EXPLODE_INSTANCES" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="ID_SELECTION" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="PARENT_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="CHILD_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
 #!     <XFORM_PARM PARM_NAME="FLATTEN_ONE_LEVEL_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
 #!     <XFORM_PARM PARM_NAME="PART_NUMBER_FIELD" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="COPY_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="LIST_ATTR_MODE_LOOKUP" PARM_VALUE="LEAN"/>
-#!     <XFORM_PARM PARM_NAME="SPLIT_COMPOSITES" PARM_VALUE="No"/>
-#!     <XFORM_PARM PARM_NAME="ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
-#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Deaggregator"/>
-#!     <XFORM_PARM PARM_NAME="PRESERVE_HIERARCHY_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
 #!     <XFORM_PARM PARM_NAME="GEOM_NAME_FIELD" PARM_VALUE="_geometry_name"/>
-#!     <XFORM_PARM PARM_NAME="LIST_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="SPLIT_COMPOSITES" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTR_MODE_LOOKUP" PARM_VALUE="LEAN"/>
 #!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
-#!     <XFORM_PARM PARM_NAME="ID_SELECTION" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_HIERARCHY_GROUP" PARM_VALUE="FME_DISCLOSURE_CLOSED"/>
+#!     <XFORM_PARM PARM_NAME="COPY_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Deaggregator"/>
+#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="Flatten All Levels"/>
+#!     <XFORM_PARM PARM_NAME="ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="EXPLODE_INSTANCES" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="CHILD_ID_ATTR" PARM_VALUE="&lt;Unused&gt;"/>
 #! </TRANSFORMER>
 #! </TRANSFORMERS>
 #! <FEAT_LINKS>
@@ -839,7 +839,7 @@
 #!   EXTRA_POINTS=""
 #! />
 #! <FEAT_LINK
-#!   IDENTIFIER="8"
+#!   IDENTIFIER="11"
 #!   SOURCE_NODE="7"
 #!   TARGET_NODE="2"
 #!   SOURCE_PORT_DESC="fo 0 DEAGGREGATED"
@@ -864,7 +864,7 @@ GUI IGNORE SourceDataset_OBJ_1,OBJ_IN_MERGE_MESH_PARTS_OBJ_1,OBJ_IN_MOVE_TO_WORL
 DEFAULT_MACRO SourceDataset_OBJ d
 GUI MULTIFILE SourceDataset_OBJ OBJ_Files(*.obj)|*.obj|All_Files(*)|* Source Wavefront OBJ File:
 DEFAULT_MACRO FEATURE_TYPES 
-GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES "d,_FORMAT_OVERRIDE_,OBJ,_DATASET_OVERRIDE_,SourceDataset_OBJ,MERGE_MESH_PARTS,No,MOVE_TO_WORLD_COORDSYS,No,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,NETWORK_AUTHENTICATION,\"AUTH_INFO_GROUP,NO,AUTH_METHOD,<lt>Unused<gt>,NAMED_CONNECTION,<lt>Unused<gt>,AUTH_USERNAME,<lt>Unused<gt>,AUTH_PASSWORD,<Unused>\",VARIABLE_FEATURE_TYPES,yes,USE_SEARCH_ENVELOPE,NO,SourceDataset,/home/fme/Downloads/OSM2World-latest-bin/137339375.obj,FME_GEOMETRY_HANDLING,Enhanced,_MERGE_SCHEMAS,YES" Feature Types to Read:
+GUI OPTIONAL FEATURE_TYPES FEATURE_TYPES "d,_FORMAT_OVERRIDE_,OBJ,_DATASET_OVERRIDE_,SourceDataset_OBJ,MERGE_MESH_PARTS,No,MOVE_TO_WORLD_COORDSYS,No,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,NETWORK_AUTHENTICATION,\"AUTH_INFO_GROUP,NO,AUTH_METHOD,<lt>Unused<gt>,NAMED_CONNECTION,<lt>Unused<gt>,AUTH_USERNAME,<lt>Unused<gt>,AUTH_PASSWORD,<Unused>\",COORDSYS,EPSG:3857,VARIABLE_FEATURE_TYPES,yes,USE_SEARCH_ENVELOPE,NO,SourceDataset,/home/fme/Downloads/OSM2World-latest-bin/137339375.obj,FME_GEOMETRY_HANDLING,Enhanced,_MERGE_SCHEMAS,YES" Feature Types to Read:
 DEFAULT_MACRO DestDataset_CITYGML d
 GUI FILENAME DestDataset_CITYGML CityGML_Files(*.gml;*.xml)|*.gml;*.xml|CityGML_Files(*.gml)|*.gml|CityGML_Files(*.xml)|*.xml|All_Files|* Destination CityGML Document:
 INCLUDE [ if {{$(SourceDataset_OBJ)} == {}} { puts_real {Parameter 'SourceDataset_OBJ' must be given a value.}; exit 1; }; ]
@@ -1122,7 +1122,9 @@ OBJ_1_READER_META_ATTRIBUTES fme_feature_type
 
 # -------------------------------------------------------------------------
 
+OBJ_1_COORDINATE_SYSTEM EPSG:3857
 OBJ_1_FEATURE_TYPES $(FEATURE_TYPES)
+CITYGML_1_COORDINATE_SYSTEM EPSG:3857
 MULTI_READER_CONTINUE_ON_READER_FAILURE No
 
 # -------------------------------------------------------------------------
@@ -1145,7 +1147,7 @@ FACTORY_DEF * DeaggregateFactory    FACTORY_NAME Deaggregator    INPUT  FEATURE_
 
 # -------------------------------------------------------------------------
 
-FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Deaggregator_DEAGGREGATED TO CITYGML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>DYNAMIC<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Deaggregator_DEAGGREGATED TO CITYGML __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>DYNAMIC<closeparen> COORDINATE_SYSTEM EPSG:3857 GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
 # -------------------------------------------------------------------------
 
 FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
